@@ -1,0 +1,20 @@
+server:
+  port: 9002
+  servlet:
+    jsp:
+      init-parameters:
+        development: true
+    session:
+      cookie:
+        domain: .disvenk.com
+        path: /
+        http-only: false
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+    static-path-pattern: /assets/**
+  resources:
+    static-locations: /assets/
